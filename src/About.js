@@ -1,13 +1,13 @@
 // About.js
 import React from 'react';
-import resumeFile from './Olabanji.docx'
+import resumeFile from './Olabanji.pdf'
 import resumeImage from './bj.jpg';
 
 const handleDownload = () => {
   // Trigger download when the button is clicked
   const link = document.createElement('a');
   link.href = resumeFile;
-  link.download = 'Olabanji.docx'; // Specify the file name for download
+  link.download = 'Olabanji.pdf'; // Specify the file name for download
   link.click();
 };
 
