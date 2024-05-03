@@ -1,0 +1,491 @@
+/*  Navigation   */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+}
+
+
+.container {
+                display:flex;
+                   justify-content: center;
+                   align-items: center;
+                   padding-top: 65px;
+                   font-family: 'Pacifico', cursive;        
+    
+  
+}
+
+.heading {
+  display: none;
+  text-align: center;
+  animation: fadeInOut 4s infinite;
+}
+
+.visible {
+  display: block;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+
+
+
+ 
+ 
+ .back{
+  background-image: url('desert.jpg');
+  background-size: cover;
+  height: 400px;
+  width:100vw;
+  background-position: center;
+}
+
+  .headbar{
+  display:flex;
+  justify-content: center; 
+  
+ }
+ nav button{
+  border: none; /* Remove default button border */
+      outline: none; /* Remove default button outline */
+      cursor: pointer;  /* Change cursor to pointer on hover */
+      padding: 8px 16px; /* Add padding for better appearance */
+      margin: 5px; /* Add margin for spacing between buttons */
+      color:skyblue;
+      width: 100px;
+ }
+nav button:focus {
+  outline: none; /* Ensure outline is removed on focus */
+}
+nav button:hover {
+  background-color:#F8C87C;
+}
+ .toggle {
+  cursor: pointer;
+  display: none; /* Hide toggle by default */
+}
+
+@media screen and (max-width: 768px) {
+  .headbar {
+    display: none;
+  }
+
+  .toggle {
+    display: block; /* Show toggle for mobile and tablet screens */
+  }
+
+  .toggle.clicked {
+    transition: transform 0.3s ease; /* Transition effect for toggle */
+    transform: rotate(90deg); /* Rotate the toggler when clicked */
+  }
+
+  .headbar.show {
+    display: block; /* Show nav links when toggler is clicked */
+    padding: 20px; /* Add padding between links */
+  }
+  .exit {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color:#F8C87C;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+}
+/* Home */
+
+
+
+/* About */
+
+
+.everything{background-color: #F8C87C;
+  height: 350px;
+  width: 100vw;
+
+
+}
+.details{text-align: center; 
+  font-family: 'Pacifico', cursive;
+ }
+.about-me-container {
+  display: flex;
+  
+}
+
+/* Styling for the content */
+.content {
+  display: flex;
+ justify-content: center;
+  align-items: center; 
+  
+
+}
+
+/* Styling for the image container */
+.image-container {
+  flex:1 /* Add space between image and text */
+}
+
+/* Styling for the round image */
+.round-image {
+  border-radius: 50%;
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+}
+
+/* Styling for the text container */
+.text-container {
+   padding-left: 20px; /* Add space between text and button */
+   font-family: 'Open Sans', sans-serif; /* Specify Google Font */
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.6; /* Adjust line height for readability */
+  color: #333; /* Set text color */
+  font-weight:bolder; 
+  
+}
+
+/* Styling for the download button */
+.resume-container{width: 50%;}
+.download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.download-button:hover {
+  
+  background-color: #65bce7;
+  
+}
+
+  
+
+/*  Attributes  */
+.babe{text-align:center;
+  font-family: 'Pacifico', cursive;
+}
+.bat{
+  background-color: #65bce7;
+  width: 100vw;
+}
+.skill-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: gold;
+  font-size: 24px;
+}
+
+.star-filled {
+  color: gold;
+}
+
+.star-empty {
+  color: #ccc;
+}
+/* Portfolio */
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.album {
+  width: 100%;
+  max-width: 300px; 
+  margin: 10px; 
+  
+}
+
+.album a {
+  display: block; 
+  text-decoration: none;
+  color: inherit;
+}
+
+.album img {
+   
+  height: 100px; 
+  border-radius:10px;
+}
+
+.album h3 {
+  margin: 10px 0 0; 
+}
+.check {
+  text-align:center; 
+  font-family: 'Pacifico', cursive;
+}
+.cover{background-color: #F8C87C; 
+  width: 100vw;
+   }
+   /* Contact */
+  @media screen and (max-width: 370px){
+    .contact-form-container {
+      display: flex;
+      flex-direction: row;
+      
+     
+    }
+    .contact-form {
+      padding-left: 50px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%; /* Make the input and textarea full width */
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; 
+      background-color:#333;   
+      color: skyblue;     
+    }
+    
+    .contact-form textarea {
+      height: 100px; /* Increase the height of the textarea */
+    }
+    
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+
+
+
+
+
+
+
+  }
+
+
+  .contact-form-container {
+    display: flex;
+    justify-content: center;
+    
+   
+  }
+  
+  .contact-form {
+    width: 400px; /* Set the width of the form */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Make the input and textarea full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    background-color:#333;   
+    color: skyblue;     
+  }
+  
+  .contact-form textarea {
+    height: 200px; /* Increase the height of the textarea */
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color:chocolate;
+  }
+  .me{text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+  .Olu{
+    background-color: #65bce7;
+  
+  
+    
+  }    
+.street{ padding-left: 100px;
+   
+  
+  font-family: 'Open Sans', sans-serif; /* Specify Google Font */
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.6; /* Adjust line height for readability */
+  color: #000; /* Set text color */
+  font-weight:800;
+}
+
+
+
+
+
+
+
+
+
+
+
+   /* FOOTER */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    width: 100vw;
+    
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-links {
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 240px) {
+    
+      
+      .everything{
+        height: 500px;
+        width: 400px;
+      }
+     }
+    
+  
+  @media  screen and (max-width: 350px) {
+/* About  */
+.everything{
+  height: 500px;
+  width: 400px;
+}
+.contact-form-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form{
+  width: 300px;
+}
+}
+
+
+ @media  screen and (max-width: 400px) {
+/* About  */
+.everything{
+  height: 500px;
+  width: 400px;
+}
+.about-me-container .content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form{
+  width: 300px;
+}
+
+}
+
+
+
+    @media  screen and (max-width: 450px) {
+/* About  */
+.everything{
+  height: 500px;
+  width:100vw;
+}
+.contact-form-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form{
+  width: 300px;
+}
+}
+
+  
+@media  screen and (max-width: 320px) {
+  /* About  */
+  .everything{
+    height: 500px;
+    width: 100vw;
+  }
+  .about-me-container .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  
+ 
+  @media  screen and (width: 420px) {
+    /* About  */
+    .everything{
+      height: 500px;
+      width:100vw;
+    }
+    .contact-form-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-form{
+      width: 300px;
+    }
+    }
+    
+      
