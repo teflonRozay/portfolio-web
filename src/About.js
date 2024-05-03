@@ -1,13 +1,13 @@
 // About.js
 import React from 'react';
-import resumeFile from './Andrew.pdf'; // Import your resume file
+import resumeFile from './Olabanji.docx'
 import resumeImage from './bj.jpg';
 
 const handleDownload = () => {
   // Trigger download when the button is clicked
   const link = document.createElement('a');
   link.href = resumeFile;
-  link.download = 'Banji_Wilson_Resume.pdf'; // Specify the file name for download
+  link.download = 'Olabanji.docx'; // Specify the file name for download
   link.click();
 };
 
